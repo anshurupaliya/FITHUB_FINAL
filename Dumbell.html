@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white; /* Set background color */
+            color: black; /* Set text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .videos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+
+        .videos-table th {
+            background-color: #f60909; /* Background color for the table header */
+            color: white; /* Text color for the table header */
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase; /* Transform text to uppercase */
+            font-size: 24px; /* Set font size */
+        }
+
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .video-container {
+            width: 45%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px; /* Add rounded corners */
+            overflow: hidden; /* Hide overflow content */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add shadow */
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .bullet-list li::before {
+            content: "•"; /* Bullet character */
+            color: orange; /* Bullet color */
+            position: absolute;
+            left: 0;
+            top: 0.2rem; /* Adjust vertical position */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Dumbbell Row Unilateral</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Dumbbell Row Unilateral 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Dumbbell Row Unilateral 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Brace your off arm against something stable (bench, box). Stagger your stance so your leg on the side of your working arm is back.</li>
+            <li>Try to get your torso to parallel with the ground. That will extend your range of motion.</li>
+            <li>Let your arm hang freely and then pull your elbow back. Imagine you've got a tennis ball in your armpit and squeeze it each rep. </li><br> 
+           
+        </ul>
+
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Barbell Deadlift</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Deadlift 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Deadlift 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Stand with your mid-foot under the bar and grip the bar with your hands, about a shoulder width apart.</li>
+            <li>Bend your knees, then lift the bar by straightening your back. It is important to keep your back straight.</li>
+            <li>Stand to your full height and hold.</li>
+            <li>Lower the bar to the floor by bending your knees and keeping your back straight.</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white; /* Set background color */
+            color: black; /* Set text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .videos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+
+        .videos-table th {
+            background-color: #fa0000; /* Background color for the table header */
+            color: white; /* Text color for the table header */
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase; /* Transform text to uppercase */
+            font-size: 24px; /* Set font size */
+        }
+
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .video-container {
+            width: 45%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px; /* Add rounded corners */
+            overflow: hidden; /* Hide overflow content */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add shadow */
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .bullet-list li::before {
+            content: "•"; /* Bullet character */
+            color: orange; /* Bullet color */
+            position: absolute;
+            left: 0;
+            top: 0.2rem; /* Adjust vertical position */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Barbell Overhead Press</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Overhead Press 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Overhead Press 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).</li>
+            <li>Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.</li>
+            <li>Press until your elbows are extended and push your head forward slightly.</li>
+            <li>Return to the start position with control. Pulling your chin back to allow the bar to pass your face safely.</li><br>
+        </ul>
+
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Dumbbell Seated Overhead Press</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Dumbbell Seated Overhead Press 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Dumbbell Seated Overhead Press 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.</li>
+            <li>Raise the dumbbells upwards and pause at the contracted position.</li>
+            <li>Lower the weights back to starting position.</li>
+        </ul>
+    </div>
+</body>
+</html>

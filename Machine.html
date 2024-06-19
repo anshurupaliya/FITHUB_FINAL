@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white; /* Set background color */
+            color: black; /* Set text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .videos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+
+        .videos-table th {
+            background-color: #ff0505; /* Background color for the table header */
+            color: white; /* Text color for the table header */
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase; /* Transform text to uppercase */
+            font-size: 24px; /* Set font size */
+        }
+
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .video-container {
+            width: 45%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px; /* Add rounded corners */
+            overflow: hidden; /* Hide overflow content */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add shadow */
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .bullet-list li::before {
+            content: "•"; /* Bullet character */
+            color: orange; /* Bullet color */
+            position: absolute;
+            left: 0;
+            top: 0.2rem; /* Adjust vertical position */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Machine Seated Calf Raises</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Machine Seated Calf Raises 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Machine Seated Calf Raises 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Get comfortable on the machine, then place your lower thighs beneath the padded lever. Place your toes and the balls of your feet onto the foot supports.</li>
+            <li>Prevent the weight from slipping forward by gripping the handles, and release the safety bar. Lower the weight until your calves are extended.</li>
+            <li>Push your heels up to lift the padded lever and hold the contracted position, then slowly lower back down to the starting position. Repeat.</li><br>
+        </ul>
+
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Barbell Calf Raises </th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Calf Raises 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Calf Raises 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Place the bar on your back
+            <li>Start with feet flat on the ground
+            <li>Extend your heels upwards while keeping your knees stationary, and pause at the contracted position.
+            <li>Slowly return to the starting position. Repeat.
+        </ul>
+    </div>
+</body>
+</html>

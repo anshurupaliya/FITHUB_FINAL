@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white; /* Set background color */
+            color: black; /* Set text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .videos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+
+        .videos-table th {
+            background-color: #f60909; /* Background color for the table header */
+            color: white; /* Text color for the table header */
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase; /* Transform text to uppercase */
+            font-size: 24px; /* Set font size */
+        }
+
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .video-container {
+            width: 45%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px; /* Add rounded corners */
+            overflow: hidden; /* Hide overflow content */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add shadow */
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .bullet-list li::before {
+            content: "•"; /* Bullet character */
+            color: orange; /* Bullet color */
+            position: absolute;
+            left: 0;
+            top: 0.2rem; /* Adjust vertical position */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Chin Ups</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Chin Ups 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Chin Ups 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Grab the bar shoulder width apart with a supinated grip (palms facing you).</li>
+            <li>With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.</li>    
+            <li>Slowly return to starting position. Repeat.</li><br> 
+        </ul>
+
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Dumbbell Wrist Curl</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Dumbbell Wrist Curl 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Dumbbell Wrist Curl 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Grip the dumbbell with your palm facing upwards with your forearm rested against the bench.</li>
+            <li>Slowly curl your wrist upwards in a semicircular motion.</li>
+            <li>Return to starting position and repeat.</li>
+        </ul>
+    </div>
+</body>
+</html>

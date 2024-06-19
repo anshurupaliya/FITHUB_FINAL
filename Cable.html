@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Videos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white; /* Set background color */
+            color: black; /* Set text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .videos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /* Add margin bottom */
+        }
+
+        .videos-table th {
+            background-color: #ff0000; /* Background color for the table header */
+            color: white; /* Text color for the table header */
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase; /* Transform text to uppercase */
+            font-size: 24px; /* Set font size */
+        }
+
+        .videos-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .video-container {
+            width: 45%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px; /* Add rounded corners */
+            overflow: hidden; /* Hide overflow content */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add shadow */
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .bullet-list li::before {
+            content: "•"; /* Bullet character */
+            color: orange; /* Bullet color */
+            position: absolute;
+            left: 0;
+            top: 0.2rem; /* Adjust vertical position */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Cable Bayesian Curl</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Cable Bayesian Curl 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Cable Bayesian Curl 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>Use a handle attachment. The cable should be set all the way to the bottom of the machine.</li>
+            <li>Face away from the cable machine.</li>
+            <li>Stagger your stance so you have a better base of support. Face your palm forward. Flex at the elbow and extend.</li><br>
+        </ul>
+
+        <table class="videos-table">
+            <tr>
+                <th colspan="2">Barbell Curl</th>
+            </tr>
+        </table>
+
+        <div class="videos-container">
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Curl 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video width="500" controls>
+                    <source src="Barbell Curl 2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <ul class="bullet-list">
+            <li>While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out.</li>
+            <li>Continue the movement until your biceps are fully contracted and the bar is at shoulder level.</li>
+            <li>Hold the contracted position for a second and squeeze the biceps hard.</li>
+            <li>Slowly bring the weight back down to the starting position.</li>
+        </ul>
+    </div>
+</body>
+</html>
